@@ -7,7 +7,7 @@ def CodelandUsernameValidation(str)
 
   return invalid if str.length < 4 || str.length > 25
 
-  return invalid if str.match(/^[a-zA-Z]{1}\w+$(?<!_)/).nil?
+  return invalid if str.match(/^[a-zA-Z]\w+$(?<!_)/).nil?
   
   return valid
 end
